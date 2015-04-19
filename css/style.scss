@@ -45,7 +45,6 @@
 
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'icomoon';
-  speak: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -132,12 +131,12 @@ ul {
 
 .HeaderLogo {
   border-bottom: 1px solid white;
-  margin: 0 35px;
-  padding: 10px 10px 15px;
+  margin: 0 33px;
+  padding: 10px 0 15px;
 }
 
 .Header-wrapper {
-  margin-top: -268px;
+  margin-top: -280px;
   position: absolute;
   top: 50%
 }
@@ -177,7 +176,8 @@ ul {
     border: 1px solid #e6bb70;
     color: $orange;
     display: block;
-    margin: 19px 2px;
+    font-size: 1.25rem;
+    margin: 19px 5px;
     padding: 5px;
     &:hover {
       color: white;
