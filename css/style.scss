@@ -17,16 +17,20 @@
 }
 
 @mixin breakpoint($point) {
+  $small: "(min-width: 30rem)";
+  $medium: "(min-width: 46rem)";
+  $large: "(min-width: 65rem)";
+
   @if $point == large {
-    @media (min-width: 64.375em) {
+    @media #{$large} {
       @content;
     }
   } @else if $point == medium {
-    @media (min-width: 50em) {
+    @media #{$medium} {
       @content;
     }
   } @else if $point == small {
-    @media (min-width: 37.5em) {
+    @media #{$small}  {
       @content;
     }
   }
@@ -99,10 +103,13 @@ a {
 }
 
 body {
-  background: $brownLight url("../img/back.jpg") repeat 250px 0;
+  background: $brownLight url("../img/back.jpg") repeat 15px 0;
   font-family: 'Lato', sans-serif;
   font-size: 16px;
   font-weight: normal;
+  @include breakpoint(large) {
+    background-position-x: 250px;
+  }
 }
 
 img {
@@ -122,11 +129,14 @@ ul {
 
 .Header {
   background: $brown;
-  left: 0;
+  left: -250px;
   min-height: 100%;
   position: fixed;
   top: 0;
   width: 250px;
+  @include breakpoint(large) {
+    left: 0;
+  }
 }
 
 .HeaderLogo {
@@ -189,8 +199,10 @@ ul {
 /* wrapper */
 
 .Wrapper {
-  margin-left: 250px;
-  width: calc(100% - 250px);
+  @include breakpoint(large) {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+  }
 }
 
 /* home */
@@ -201,16 +213,97 @@ ul {
   padding: 25px;
   text-align: center;
 }
+
 .Home-number {
-  @include center(90, '%');
+  @include center(98, '%');
   color: $brown;
   border-bottom: 5px solid $brown;
   border-top: 5px solid $brown;
   display: block;
-  font-size: 7.5rem;
+  font-size: 3.5rem;
   font-weight: bold;
-  letter-spacing: 1.5rem;
+  letter-spacing: .5rem;
   padding-left: 1.5rem;
   text-align: center;
+  @include breakpoint(medium){
+    font-size: 5.5rem;
+    letter-spacing: 1rem;
+  }
+  @include breakpoint(large){
+    font-size: 7.5rem;
+    letter-spacing: 1.5rem;
+  }
+
 }
+.Home-numberSecond {
+  @include center(98, '%');
+  color: $brown;
+  display: block;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  @include breakpoint(medium){
+    font-size: 3.5rem;
+  }
+  @include breakpoint(large){
+    font-size: 4.5rem;
+  }
+
+}
+
+/* Slide - Promotion */
+.promotion{
+  max-width: 400px;
+  margin: 30px 0 10px;
+  text-align: left;
+  width: 100%;
+}
+.slider{
+  max-width: 1000px;
+  width: 100%;
+}
+.flexslider{
+  position: relative;
+}
+.flex-control-nav{
+  bottom: 44px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+.flex-control-nav li{
+  cursor:pointer;
+  display: inline-block;
+  margin: 0 4px;
+}
+.flex-control-nav a{
+  background: #fff;
+  border-radius: 50%;
+  color: #fff;
+  display: block;
+  line-height: 0;
+  padding: 6px;
+  text-indent: -10000px;
+}
+.flex-direction-nav a{
+  opacity: 0;
+}
+
+.promotion-text{
+  color: #7d7d7d;
+  font-size: .9rem;
+  margin: -28px 0 0;
+  max-width: 1000px;
+  text-align: justify;
+}
+
+/*  */
+
+.section-title{
+  margin: 0;
+  max-width: 700px;
+}
+
 
