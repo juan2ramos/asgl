@@ -39,8 +39,13 @@ function anchorScroll(event) {
     $('html, body').animate({
         scrollTop: target
     }, 500);
-
     event.preventDefault();
+    if(history.pushState) {
+        history.pushState(null, null, id);
+    }
+    else {
+        location.hash = id;
+    }
 }
 
 // Handlers

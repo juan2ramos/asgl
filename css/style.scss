@@ -683,3 +683,15 @@ body, h1, h2, h3, h4, ul {
   opacity: 1;
   transform: translateY(0);
 }
+/* MenuButton */
+
+.MenuButton{
+  background: $brownLight;
+  border-radius: 10px;
+  height: 40px;
+  position: fixed;
+  width: 40px;
+  @include breakpoint(large) {
+    display: none;
+  }
+}
