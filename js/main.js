@@ -45,6 +45,10 @@ function anchorScroll(event) {
     else {
         location.hash = id;
     }
+    if($(window).width() < 1040){
+        $header.removeClass('is-open');
+        $('#MenuButton').removeClass('is--close');
+    }
 }
 
 // Handlers
