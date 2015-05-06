@@ -3,6 +3,7 @@
 // ================================================
 var $root          = $('html'),
     $home          = $('#home'),
+    $header          = $('#Header'),
     homeHeight     = $home .height(),
     $number        = $('.Number'),
     eventType      = ((document.ontouchstart !== null) ? 'click' : 'touchstart');
@@ -21,14 +22,12 @@ function navSlide() {
 }
 
 function menuToggle() {
-    if($nav_header.hasClass('is-open')) {
-        $root.removeClass('pinned');
-        $nav_header.removeClass('is-open');
-        $navicon.removeClass('is--closed');
+    if($header.hasClass('is-open')) {
+        $header.removeClass('is-open');
+        $(this).removeClass('is--close');
     } else {
-        $root.addClass('pinned');
-        $nav_header.addClass('is-open');
-        $navicon.addClass('is--closed')
+        $header.addClass('is-open');
+        $(this).addClass('is--close');
     }
 }
 
@@ -54,6 +53,10 @@ function anchorScroll(event) {
 $('.scrollto').on(eventType, function() {
     anchorScroll.call(this, event);
 });
+$('#MenuButton').on(eventType, function() {
+    menuToggle.call(this, event);
+});
+
 
 $(window).scroll(navSlide);
 

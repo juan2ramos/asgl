@@ -47,10 +47,10 @@
 @mixin flex($values) {
   -webkit-box-flex: $values;
 
-  -moz-box-flex:  $values;
-  -webkit-flex:  $values;
-  -ms-flex:  $values;
-  flex:  $values;
+  -moz-box-flex: $values;
+  -webkit-flex: $values;
+  -ms-flex: $values;
+  flex: $values;
 }
 
 @mixin order($val) {
@@ -167,9 +167,11 @@ body, h1, h2, h3, h4, ul {
   position: fixed;
   top: 0;
   width: 250px;
+  z-index: 2000;
   @include breakpoint(large) {
     left: 0;
   }
+  @include transition(all, .5s, ease-in-out);
 }
 
 .HeaderLogo {
@@ -179,7 +181,7 @@ body, h1, h2, h3, h4, ul {
 }
 
 .Header-wrapper {
-  margin-top: -280px;
+  margin-top: -320px;
   position: absolute;
   top: 50%
 }
@@ -544,7 +546,6 @@ body, h1, h2, h3, h4, ul {
   }
 }
 
-
 .OurMore-content {
   background: rgba(252, 234, 189, .75);
   border-radius: 10px;
@@ -578,23 +579,22 @@ body, h1, h2, h3, h4, ul {
 
 /* Contact */
 
-.Contact-header,.Contact-contentForm {
+.Contact-header, .Contact-contentForm {
   @include center(90, '%');
   @include breakpoint(large) {
-    @include center(900, 'px', 1.5);
   }
 }
 
 .Contact-figure {
-  display: inline-block;
+  display: none;
   margin: 0;
   max-width: 30%;
   vertical-align: middle;
-}
-
-.Contact-figure {
   text-align: center;
   width: 29%;
+  @include breakpoint(medium) {
+    display: inline-block;
+  }
 }
 
 .Contact-figure img {
@@ -602,12 +602,16 @@ body, h1, h2, h3, h4, ul {
 }
 
 .Contact-hgroup {
-
   display: inline-block;
-  max-width: 70%;
+  font-size: 1.3rem;
+  max-width: 100%;
   padding: 16px;
   text-align: justify;
   vertical-align: middle;
+  @include breakpoint(medium) {
+    font-size: 1rem;
+    max-width: 70%;
+  }
 }
 
 .Contact-h5 {
@@ -638,7 +642,7 @@ body, h1, h2, h3, h4, ul {
   margin: 0;
   display: none;
   @include breakpoint(medium) {
-   display: block;
+    display: block;
   }
 }
 
@@ -647,13 +651,17 @@ body, h1, h2, h3, h4, ul {
 }
 
 .Contact-number {
-  border-top: 2px solid $brown ;
-  border-bottom: 2px solid $brown ;
+  border-top: 2px solid $brown;
+  border-bottom: 2px solid $brown;
   color: $brown;
   display: block;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  @include breakpoint(medium) {
+    font-size: 2rem;
+  }
 }
-.Contact input, .Contact textarea{
+
+.Contact input, .Contact textarea {
   border-radius: 5px;
   border: 1px solid $brown;
   display: block;
@@ -662,8 +670,26 @@ body, h1, h2, h3, h4, ul {
   width: 90%;
 }
 
+.Send {
+  background: $brown;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  margin: 10px auto;
+  padding: 10px 0;
+  width: 90%;
+  @include breakpoint(medium) {
+    display: block;
+  }
+  &:hover {
+    background: $brownLight;
+    color: $brown;
+  }
+}
+
 /* Number */
-.Number{
+.Number {
   background: rgba(253, 251, 220, 0.8);
   left: 0;
   opacity: 0;
@@ -679,19 +705,43 @@ body, h1, h2, h3, h4, ul {
     width: calc(100% - 250px);
   }
 }
-.is-sticky{
+
+.is-sticky {
   opacity: 1;
   transform: translateY(0);
 }
+
 /* MenuButton */
 
-.MenuButton{
+.MenuButton {
   background: $brownLight;
-  border-radius: 10px;
-  height: 40px;
+  border: 1px solid $brown;
+  border-radius: 3px;
+  cursor: pointer;
+  height: 45px;
+  outline: 0;
   position: fixed;
-  width: 40px;
+  width: 45px;
+  top: 0;
+  left: 0;
+  z-index: 1000;
   @include breakpoint(large) {
     display: none;
   }
+  @include transition(all, .5s, ease-in-out);
+}
+.MenuButton-line{
+  background: $brown;
+  border-radius: 2px;
+  display: block;
+  height: 4px;
+  margin: 4px auto;
+  width: 80%;
+}
+
+.is-open{
+  left: 0;
+}
+.is--close{
+  left: 250px;
 }
