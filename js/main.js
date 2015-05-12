@@ -38,19 +38,19 @@ function anchorScroll(event) {
     $('html, body').animate({
         scrollTop: target
     }, 500);
-    event.preventDefault();
     if(history.pushState) {
-        history.pushState(null, null, id);
+        history.pushState(null, null, id.replace('#', ''));
     }
     else {
-        location.hash = id;
+        location.hash = id.hash.replace('#', '');
     }
     if($(window).width() < 1040){
         $header.removeClass('is-open');
         $('#MenuButton').removeClass('is--close');
     }
-}
 
+    event.preventDefault();
+}
 // Handlers
 // =================================================
 
@@ -74,4 +74,5 @@ $(window).load(function(){
         }
     });
     navSlide();
+
 });

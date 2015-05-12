@@ -2,12 +2,12 @@
 <html lang="es">
 <head>
 
-    <title>A seguirla</title>
+    <title>correo de la noche 5521313 de a seguirla con venta de licor a domicilio</title>
 
     <!-- Meta -->
     <meta charset="utf-8">
     <meta name="author" content="juan2ramos"/>
-    <meta name="description" content=""/>
+    <meta name="description" content="Tu tienda de licor ✓De venta a domicilio ✓Las 24 horas del día ✓Los 7 días de la semana ✓Con entrega inmediata y Excelentes precios."/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1"/>
 
     <!-- Favicon -->
@@ -38,8 +38,18 @@
     <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
 
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-62853210-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
 </head>
-<body>
+<body onload="check()">
 <header id="Header" class="Header">
     <section class="Header-wrapper">
         <figure class="HeaderLogo">
@@ -80,15 +90,16 @@
     </section>
     <section id="promociones" class="section-wrapper">
         <figure class="promotion">
-            <img src="img/promociones-aseguirla.png" alt="promociones aseguirla"/>
+            <h2>
+                <img title= "promociones y combos" src="img/promociones-aseguirla.png" alt="promociones aseguirla"/>
+            </h2>
         </figure>
         <div class="slider">
             <div class="flexslider">
                 <ul class="slides">
-                    <li><img src="img/banner/banner1.jpg"/></li>
-                    <li><img src="img/banner/banner1.jpg"/></li>
-                    <li><img src="img/banner/banner1.jpg"/></li>
-                    <li><img src="img/banner/banner1.jpg"/></li>
+                    <li><img src="img/banner/banner-02.png"/></li>
+                    <li><img src="img/banner/banner-03.png"/></li>
+                    <li><img src="img/banner/banner-04.png"/></li>
 
                 </ul>
             </div>
@@ -103,7 +114,9 @@
     </section>
     <section id="cerveza" class="section-wrapper">
         <figure class="section-title">
-            <img src="img/logos/logo-cerveza.png" alt="logo cerveza correo de la noche"/>
+            <h2 >
+                <img  title= "cerveza" src="img/logos/logo-cerveza.png" alt="logo cerveza correo de la noche"/>
+            </h2>
         </figure>
         <div class="flex">
             <article class="article-product">
@@ -148,8 +161,11 @@
 
     <section id="aguardiente" class="section-wrapper">
         <figure class="section-title">
-            <img src="img/logos/logo-aguardiente.png" alt="logo aguardiente"/>
+            <h2>
+                <img title ="aguardiente" src="img/logos/logo-aguardiente.png" alt="logo aguardiente"/>
+            </h2>
         </figure>
+
         <div class="flex">
             <article class="article-product">
                 <figure class="figure-product">
@@ -224,7 +240,9 @@
 
     <section id="ginebra" class="section-wrapper">
         <figure class="section-title">
-            <img src="img/logos/logo-ginebra.png" alt="logo ginebra"/>
+            <h2>
+                <img title="ginebra" src="img/logos/logo-ginebra.png" alt="logo ginebra"/>
+            </h2>
         </figure>
         <div class="flex">
             <article class="article-product">
@@ -260,7 +278,10 @@
 
     <section id="ron" class="section-wrapper">
         <figure class="section-title">
-            <img src="img/logos/logo-ron.png" alt="logo ron"/>
+
+            <h2>
+                <img title="ron del correo de la noche" src="img/logos/logo-ron.png" alt="logo ron"/>
+            </h2>
         </figure>
         <div class="flex">
             <article class="article-product">
@@ -315,7 +336,9 @@
 
     <section id="tequila" class="section-wrapper">
         <figure class="section-title">
-            <img src="img/logos/logo-tequila.png" alt="logo tequila"/>
+            <h2>
+                <img  title="tequila" src="img/logos/logo-tequila.png" alt="logo tequila"/>
+            </h2>
         </figure>
         <div class="flex">
             <article class="article-product">
@@ -344,7 +367,9 @@
 
     <section id="vodka" class="section-wrapper">
         <figure class="section-title">
-            <img src="img/logos/logo-vodka.png" alt="logo vodka"/>
+            <h2>
+                <img title= "vodka" src="img/logos/logo-vodka.png" alt="logo vodka"/>
+            </h2>
         </figure>
         <div class="flex">
             <article class="article-product">
@@ -399,7 +424,9 @@
 
     <section id="whisky" class="section-wrapper">
         <figure class="section-title">
-            <img src="img/logos/logo-whisky-a-seguirla.png" alt="logo whisky a seguirla"/>
+            <h2>
+                <img title ="whisky" src="img/logos/logo-whisky-a-seguirla.png" alt="logo whisky a seguirla"/>
+            </h2>
         </figure>
         <div class="flex">
             <article class="article-product">
@@ -459,8 +486,10 @@
     </section>
 
     <section id="bebidasSinAlcohol" class="section-wrapper">
-        <figure class="section-title">
-            <img src="img/logos/logo-bebidas-sin-alcohol.png" alt="logo bebidas sin alcohol"/>
+        <h2>
+            <figure class="section-title">
+                <img title ="bebidas sin alcohol"   src="img/logos/logo-bebidas-sin-alcohol.png" alt="logo bebidas sin alcohol"/>
+        </h2>
         </figure>
         <div class="flex">
             <article class="article-product">
@@ -529,7 +558,9 @@
 
     <section id="pasabocas" class="section-wrapper">
         <figure class="section-title">
-            <img src="img/logos/logo-pasabocas.png" alt="logo de pasabocas"/>
+            <h2>
+                <img title= "pasabocas" src="img/logos/logo-pasabocas.png" alt="logo de pasabocas"/>
+            </h2>
         </figure>
         <div class="flex">
             <article class="article-product">
@@ -548,15 +579,15 @@
 
             <article class="article-product">
                 <figure class="figure-product">
-                    <img src="img/pasabocas/pasabocas-papas-margarita-de-poyo.png" alt="paquete de papas margarita de poyo"/>
-                    <figcaption class="product-text">Paquete De Papas De Poyo</figcaption>
+                    <img src="img/pasabocas/pasabocas-papas-margarita-de-poyo.png" alt="paquete de papas margarita de pollo"/>
+                    <figcaption class="product-text">Paquete De Papas De Pollo</figcaption>
                 </figure>
             </article>
 
             <article class="article-product">
                 <figure class="figure-product">
                     <img src="img/pasabocas/pasabocas-mani-especial.png" alt="paquete de mani especial"/>
-                    <figcaption class="product-text">Paquete De Mani Especial</figcaption>
+                    <figcaption class="product-text">Paquete De Maní Especial</figcaption>
                 </figure>
             </article>
 
@@ -585,7 +616,9 @@
 
     <section id="sexShop" class="section-wrapper">
         <figure class="section-title">
-            <img src="img/logos/logo-sex-shop.png" alt="logo de sex shop"/>
+            <h2>
+                <img title= "sex shop" src="img/logos/logo-sex-shop.png" alt="logo de sex shop"/>
+            </h2>
         </figure>
         <div class="flex">
             <article class="article-product">
@@ -612,7 +645,9 @@
 
     <section id="cigarrillos" class="section-wrapper ">
         <figure class="section-title">
-            <img src="img/logos/logo-cigarrillos.png" alt="cerveza aseguirla correo de la noche"/>
+            <h2>
+                <img title= "cigarrillos" src="img/logos/logo-cigarrillos.png" alt="cigarrillos correo de la noche"/>
+            </h2>
         </figure>
         <hgroup class="cigarettes">
             <h4>VENTA DE CIGARRILLOS EN EL</h4>
@@ -623,7 +658,7 @@
         </hgroup>
     </section>
 
-    <section class="About">
+    <section class="About" id="por-que-elegirnos" >
         <div class="About-wrapper">
             <header class="About-header">
                 <figure class="About-figure"><img src="img/logo-aseguirla.png" alt="aseguirla correo de la noche"/>
@@ -700,7 +735,7 @@
 
         </div>
     </section>
-    <section class="section-wrapper ">
+    <section class="section-wrapper " id="nuestra-experiecia">
         <article class="Our-article">
             <figure class="Our-figure"><img src="img/our/experiencia-venta-licor.png" alt=""/></figure>
             <div class="Our-content">
@@ -757,7 +792,7 @@
                 <p>Esperamos poder tener el gusto de atenderte y brindarte la mejor atención posible.</p>
             </div>
         </article>
-        <article class="Our-article">
+        <article class="Our-article" id="nuestros-clientes">
             <figure class="Our-figure less-figure"><img src="img/our/telefono-correo-de-la-noche.png" alt=""/></figure>
             <div class="Our-content">
                 <h2 class="Our-h2">NUESTROS NÚMEROS DE TELÉFONO</h2>
@@ -815,7 +850,7 @@
             </div>
         </article>
     </section>
-    <section class="section-wrapper Contact">
+    <section class="section-wrapper Contact" id="contacto">
         <header class="Contact-header">
             <figure class="Contact-figure"><img src="img/logo-contacto-correo-de-la-noche.png" alt=""/></figure>
             <hgroup class="Contact-hgroup">
@@ -864,4 +899,29 @@
 
 <script src="js/flexslider.js"></script>
 <script src="js/main.js"></script>
+<script>
+    function check() {
+        var id = '<?php echo "#".$url ?>',
+        target = $(id).offset().top;
+        $('html, body').animate({
+            scrollTop: target-600
+        }, 500);
+
+        if(history.pushState) {
+            history.pushState(null, null, id.replace('#', ''));
+        }
+        else {
+            location.hash = id.hash.replace('#', '');
+        }
+    }
+</script>
+<script type="text/javascript">
+    /* <![CDATA[ */
+    var google_conversion_id = 962263538;
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+    /* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
 </html>
