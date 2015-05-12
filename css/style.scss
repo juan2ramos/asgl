@@ -173,6 +173,17 @@ body, h1, h2, h3, h4, ul {
   }
   @include transition(all, .5s, ease-in-out);
 }
+.Home h1{
+  color: $brown;
+  text-align: center;
+  font-size: 1rem;
+  @include breakpoint(medium){
+    font-size: 1.5rem;
+  }
+  @include breakpoint(large){
+    font-size: 2rem;
+  }
+}
 
 .HeaderLogo {
   border-bottom: 1px solid white;
@@ -653,7 +664,7 @@ body, h1, h2, h3, h4, ul {
 .Contact-number {
   border-top: 2px solid $brown;
   border-bottom: 2px solid $brown;
-  color: $brown;
+  color: $brownLight;;
   display: block;
   font-size: 1.5rem;
   @include breakpoint(medium) {
@@ -690,7 +701,7 @@ body, h1, h2, h3, h4, ul {
 
 /* Number */
 .Number {
-  background: rgba(253, 251, 220, 0.8);
+  background: $brown;
   left: 0;
   opacity: 0;
   position: fixed;
